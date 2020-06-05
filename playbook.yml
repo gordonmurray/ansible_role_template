@@ -1,1 +1,15 @@
 ---
+# Ansible playbook template
+
+- name: Run whatever
+
+  gather_facts: false
+
+  vars_files:
+    - group_vars/windows.yml
+
+  hosts:
+    - localhost
+
+  roles:
+    - role
